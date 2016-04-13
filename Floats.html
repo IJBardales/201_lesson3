@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Launch School Floats</title>
+    <style>
+      body {
+        background-color: peachpuff;
+      }
+      
+      section {
+        background-color: white;
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      
+      .floatleft {
+        background-color: mistyrose;
+        float: left;
+        width: 500px;
+        padding-right: 30px;
+        box-sizing: padding-box;    /* This is exercise 3, the solution is border-box */
+      }
+      
+      .floatright {
+        background-color: lightgrey;
+        float: right;
+        width: 300px;
+      }
+      
+      
+      section:after {
+        content: " ";
+        display: block;
+        clear: both;
+      }
+      
+      
+    </style>
+  </head>  
+    <body>
+      <section>
+        <article class="floatleft">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo velit ac neque iaculis aliquet. Proin suscipit quam ut libero pulvinar, et tempor ipsum accumsan. Sed congue aliquam tortor, id ultricies justo feugiat ut. Aliquam eu scelerisque risus. Nulla ac scelerisque enim. Pellentesque quis vehicula nisl, in faucibus diam. Phasellus porttitor, augue id aliquet maximus, augue felis eleifend erat, sit amet lobortis erat enim eu magna. Quisque vitae mi id mi commodo lobortis. Maecenas pretium, sem eget molestie fermentum, quam quam hendrerit nulla, sit amet mattis enim nisi at nulla. Ut viverra accumsan eros, et volutpat metus pulvinar quis. In ipsum diam, ullamcorper non ultricies sed, egestas dapibus dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum lectus mi, ac accumsan lectus tempus a.</p>
+          <p>Quisque sagittis tristique molestie. Nullam faucibus aliquet magna vehicula sagittis. Donec accumsan purus nec metus dapibus dictum id in arcu. Nam et ipsum et tellus pretium gravida. Nulla in magna vitae dolor commodo egestas. Quisque at nulla dignissim, faucibus sem a, vehicula nibh. Quisque convallis suscipit massa, a hendrerit ante interdum eget. Quisque in iaculis mauris. Sed ornare augue non massa pellentesque gravida. Donec vitae nisl vitae urna rutrum porta. Donec feugiat sapien aliquet nunc sodales vehicula.</p>
+          <p>Morbi sit amet metus non leo facilisis rhoncus sit amet eu nulla. Integer pellentesque ipsum in mi porta, id pellentesque sem aliquam. Duis sed ligula pharetra turpis hendrerit finibus. Etiam et justo sem. Donec dictum bibendum varius. Etiam et nunc quis erat tincidunt mattis. Mauris malesuada tortor et felis rutrum vulputate. Nam sed ornare risus, sed rutrum felis.</p>
+          <p>Morbi sit amet metus non leo facilisis rhoncus sit amet eu nulla. Integer pellentesque ipsum in mi porta, id pellentesque sem aliquam. Duis sed ligula pharetra turpis hendrerit finibus. Etiam et justo sem. Donec dictum bibendum varius. Etiam et nunc quis erat tincidunt mattis. Mauris malesuada tortor et felis rutrum vulputate. Nam sed ornare risus, sed rutrum felis.</p>
+          <p>Nullam tempor vitae mi et porta. Aliquam ultricies mauris nulla, eu suscipit leo semper vel. Ut fringilla dictum orci, fringilla tempor nisi lacinia vitae. Morbi laoreet orci eget orci ullamcorper, ut congue mi ullamcorper. Nullam fermentum neque ut ex malesuada, nec faucibus metus gravida. Quisque consequat leo in lacus pellentesque ultricies. Etiam posuere massa quis mi accumsan blandit. Aliquam tincidunt varius augue, nec rutrum eros faucibus nec. Nulla facilisi. Integer et accumsan mauris, quis mollis dui. Etiam varius dolor pretium, laoreet tortor ut, consequat orci. Morbi vitae dui ut risus blandit aliquam nec sed arcu. Cras maximus augue ante, sed iaculis purus mollis quis. Curabitur pulvinar sapien mi, quis aliquet mi feugiat vitae. Cras eu mauris non sapien pellentesque pellentesque sit amet vel nibh.</p>
+        </article>
+        <aside class="floatright">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo velit ac neque iaculis aliquet. Proin suscipit quam ut libero pulvinar, et tempor ipsum accumsan. Sed congue aliquam tortor, id ultricies justo feugiat ut. Aliquam eu scelerisque risus. Nulla ac scelerisque enim. Pellentesque quis vehicula nisl, in faucibus diam. Phasellus porttitor, augue id aliquet maximus, augue felis eleifend erat, sit amet lobortis erat enim eu magna. Quisque vitae mi id mi commodo lobortis. Maecenas pretium, sem eget molestie fermentum, quam quam hendrerit nulla, sit amet mattis enim nisi at nulla. Ut viverra accumsan eros, et volutpat metus pulvinar quis. In ipsum diam, ullamcorper non ultricies sed, egestas dapibus dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum lectus mi, ac accumsan lectus tempus a.</p>
+        </aside>
+      </section>
+    </body>
+</html>
