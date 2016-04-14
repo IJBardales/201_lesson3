@@ -9,38 +9,57 @@
       }
       
       section {
+         overflow: hidden; /* This is exercise 4 */
         background-color: white;
-        width: 800px;
+        max-width: 1200px;
         margin: 0 auto;
-        overflow: hidden;
+       
       }
       
+      
+      /* This is exercise 3, the solution is border-box.  Ok, just read on Stackoverflow padding-box has been drop from specs,
+        but it still functions --- it worked when I applied it but I changed it to border-box.
+      */
       .floatleft {
         background-color: mistyrose;
         float: left;
-        width: 500px;
+        width: 70%;
         padding-right: 30px;
-        box-sizing: padding-box;    /* This is exercise 3, the solution is border-box */
+        box-sizing: border-box;
       }
       
       .floatright {
         background-color: lightgrey;
-        float: right;
-        width: 300px;
+       /* float: right;  This is exercise 4 I had to peek, still thinking about how overflow: hidden could be the answer*/ 
+        /* width: 300px;  This is exercise 4*/
+        overflow: hidden;
       }
       
-      
+
       section:after {
         content: " ";
         display: block;
         clear: both;
       }
       
+      .furtherleft {
+        float: left;
+        width: 180px;  /* This is exercise 7, my math came out to 180px which is equal to 15%, which is the answer */
+        background-color: darksalmon;
+      }
       
+      footer {
+        clear: both;   /* This is exercise 6, it would have been valid to use clear: left also, right? */
+        background-color: #BDB76B;
+      }
+
     </style>
   </head>  
     <body>
       <section>
+        <aside class="furtherleft">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo velit ac neque iaculis aliquet. Proin suscipit quam ut libero pulvinar, et tempor ipsum accumsan. Sed congue aliquam tortor, id ultricies justo feugiat ut. Aliquam eu scelerisque risus. Nulla ac scelerisque enim. Pellentesque quis vehicula nisl, in faucibus diam. Phasellus porttitor, augue id aliquet maximus, augue felis eleifend erat, sit amet lobortis erat enim eu magna. Quisque vitae mi id mi commodo lobortis. Maecenas pretium, sem eget molestie fermentum, quam quam hendrerit nulla, sit amet mattis enim nisi at nulla. Ut viverra accumsan eros, et volutpat metus pulvinar quis. In ipsum diam, ullamcorper non ultricies sed, egestas dapibus dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum lectus mi, ac accumsan lectus tempus a.</p>
+        </aside>
         <article class="floatleft">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo velit ac neque iaculis aliquet. Proin suscipit quam ut libero pulvinar, et tempor ipsum accumsan. Sed congue aliquam tortor, id ultricies justo feugiat ut. Aliquam eu scelerisque risus. Nulla ac scelerisque enim. Pellentesque quis vehicula nisl, in faucibus diam. Phasellus porttitor, augue id aliquet maximus, augue felis eleifend erat, sit amet lobortis erat enim eu magna. Quisque vitae mi id mi commodo lobortis. Maecenas pretium, sem eget molestie fermentum, quam quam hendrerit nulla, sit amet mattis enim nisi at nulla. Ut viverra accumsan eros, et volutpat metus pulvinar quis. In ipsum diam, ullamcorper non ultricies sed, egestas dapibus dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum lectus mi, ac accumsan lectus tempus a.</p>
           <p>Quisque sagittis tristique molestie. Nullam faucibus aliquet magna vehicula sagittis. Donec accumsan purus nec metus dapibus dictum id in arcu. Nam et ipsum et tellus pretium gravida. Nulla in magna vitae dolor commodo egestas. Quisque at nulla dignissim, faucibus sem a, vehicula nibh. Quisque convallis suscipit massa, a hendrerit ante interdum eget. Quisque in iaculis mauris. Sed ornare augue non massa pellentesque gravida. Donec vitae nisl vitae urna rutrum porta. Donec feugiat sapien aliquet nunc sodales vehicula.</p>
@@ -51,6 +70,9 @@
         <aside class="floatright">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo velit ac neque iaculis aliquet. Proin suscipit quam ut libero pulvinar, et tempor ipsum accumsan. Sed congue aliquam tortor, id ultricies justo feugiat ut. Aliquam eu scelerisque risus. Nulla ac scelerisque enim. Pellentesque quis vehicula nisl, in faucibus diam. Phasellus porttitor, augue id aliquet maximus, augue felis eleifend erat, sit amet lobortis erat enim eu magna. Quisque vitae mi id mi commodo lobortis. Maecenas pretium, sem eget molestie fermentum, quam quam hendrerit nulla, sit amet mattis enim nisi at nulla. Ut viverra accumsan eros, et volutpat metus pulvinar quis. In ipsum diam, ullamcorper non ultricies sed, egestas dapibus dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum lectus mi, ac accumsan lectus tempus a.</p>
         </aside>
+        <footer>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo velit ac neque iaculis aliquet. Proin suscipit quam ut libero pulvinar, et tempor ipsum accumsan. Sed congue aliquam tortor, id ultricies justo feugiat ut. Aliquam eu scelerisque risus. Nulla ac scelerisque enim. Pellentesque quis vehicula nisl, in faucibus diam. Phasellus porttitor, augue id aliquet maximus, augue felis eleifend erat, sit amet lobortis erat enim eu magna. Quisque vitae mi id mi commodo lobortis. Maecenas pretium, sem eget molestie fermentum, quam quam hendrerit nulla, sit amet mattis enim nisi at nulla. Ut viverra accumsan eros, et volutpat metus pulvinar quis. In ipsum diam, ullamcorper non ultricies sed, egestas dapibus dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum lectus mi, ac accumsan lectus tempus a.</p>
+        </footer>
       </section>
     </body>
 </html>
